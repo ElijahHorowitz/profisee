@@ -94,7 +94,7 @@ function NewSale() {
         try {
             let res = await axios.post('/sales', newSale);
             console.log(res.data);
-
+            window.location.replace('/sales');
         } catch (err) {
             console.error(err);
         }
